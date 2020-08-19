@@ -41,7 +41,7 @@ if EDITINDIRECT_DIR
 endif
 
 if POPUP_DIR
-  AM_ELCFLAGS += -L "$(popuplispdir)"
+  AM_ELCFLAGS += -L "$(transientlispdir)"
 endif
 
 if EMACS_Q

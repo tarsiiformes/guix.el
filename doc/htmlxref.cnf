@@ -4,9 +4,9 @@
 # manuals in the generated HTML pages (created by "make manual"
 # command).  See (info "(texinfo) HTML Xref Configuration") for details.
 
-MAGIT_POPUP = https://magit.vc/manual/magit-popup
-magit-popup     mono    ${MAGIT_POPUP}
-magit-popup     node    ${MAGIT_POPUP}/
+TRANSIENT = https://magit.vc/manual/transient
+transient       mono    ${TRANSIENT}
+transient       node    ${TRANSIENT}/
 
 GEISER = http://www.nongnu.org/geiser
 geiser          mono    ${GEISER}

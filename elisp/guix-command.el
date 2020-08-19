@@ -48,6 +48,7 @@
 ;; ("import" "gnu").  The empty list stands for the plain "guix" without
 ;; subcommands.
 
+
 ;; All actions in popup windows are divided into 2 groups:
 ;;
 ;; - 'Popup' actions - used to pop up another window.  For example, every
@@ -62,7 +63,7 @@
 ;;; Code:
 
 (require 'cl-lib)
-(require 'magit-popup)
+(require 'transient)
 (require 'bui-utils)
 (require 'guix nil t)
 (require 'guix-utils)

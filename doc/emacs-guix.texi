@@ -185,8 +185,8 @@ features as without Guix.
 interfaces (to display packages, generations, licenses, etc.).
 
 @item
-@uref{https://github.com/magit/magit-popup, magit-popup library}.  You
-already have this library if you use Magit 2.1.0 or later.  This
+@uref{https://github.com/magit/transient, transient library}.  You
+already have this library if you use Magit 3.0.0 or later.  This
 library is required only for @kbd{M-x@tie{}guix} command (@pxref{Popup
 Interface}).
 
@@ -204,7 +204,7 @@ list of packages (@pxref{Package Keys}).
 @end itemize
 
 To sum up, most likely, you'll need all the above dependencies except
-maybe @code{magit-popup}, @code{edit-indirect} and @code{build-farm}.
+maybe @code{transient}, @code{edit-indirect} and @code{build-farm}.
 
 @node Using from Git
 @section Using from Git
@@ -1062,9 +1062,9 @@ Open @file{@dots{}/guix/licenses.scm} and move to the specified license.
 @chapter Popup Interface
 
 If you ever used Magit, you know what ``popup interface'' is
-(@pxref{Top,,, magit-popup, Magit-Popup User Manual}).  Even if you are
-not acquainted with Magit, there should be no worries as it is very
-intuitive.
+(@pxref{Top,,, transient, Transient User and Developer Manual}).  Even
+if you are not acquainted with Magit, there should be no worries as it
+is very intuitive.
 
 @findex guix
 So, @kbd{M-x@tie{}guix} command provides a top-level popup interface

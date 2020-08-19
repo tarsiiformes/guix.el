@@ -130,18 +130,18 @@ AC_ARG_WITH([editindirect-lispdir],
   [editindirectlispdir="no"])
 AC_SUBST([editindirectlispdir])
 
-AC_ARG_WITH([popup-lispdir],
-  [AS_HELP_STRING([--with-popup-lispdir],
-    [directory with magit-popup.el file])],
-  [popuplispdir="$withval"],
-  [popuplispdir="no"])
-AC_SUBST([popuplispdir])
+AC_ARG_WITH([transient-lispdir],
+  [AS_HELP_STRING([--with-transient-lispdir],
+    [directory with transient.el file])],
+  [transientlispdir="$withval"],
+  [transientlispdir="no"])
+AC_SUBST([transientlispdir])
 
 AM_CONDITIONAL([GEISER_DIR], [test "x$geiserlispdir" != "xno"])
 AM_CONDITIONAL([DASH_DIR], [test "x$dashlispdir" != "xno"])
 AM_CONDITIONAL([BUI_DIR], [test "x$builispdir" != "xno"])
 AM_CONDITIONAL([EDITINDIRECT_DIR], [test "x$editindirectlispdir" != "xno"])
-AM_CONDITIONAL([POPUP_DIR], [test "x$popuplispdir" != "xno"])
+AM_CONDITIONAL([POPUP_DIR], [test "x$transientlispdir" != "xno"])
 
 dnl If all elisp dependencies are specified, we can use "emacs -Q" for
 dnl byte-compilation.  Otherwise, "emacs" will be used, and it will
@@ -151,7 +151,7 @@ AM_CONDITIONAL([EMACS_Q],
         "x$dashlispdir" != "xno" -a \
         "x$builispdir" != "xno" -a \
         "x$editindirectlispdir" != "xno" -a \
-        "x$popuplispdir" != "xno"])
+        "x$transientlispdir" != "xno"])
 
 dnl ----------------------------------------------------------------
 
